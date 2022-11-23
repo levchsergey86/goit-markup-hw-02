@@ -93,6 +93,7 @@ ul {
 
 .button {
     cursor: pointer;
+    font-family: Roboto;
     background-color: var(--accent-color);
     color: var(--global-white-color);
     font-size: 16px;
