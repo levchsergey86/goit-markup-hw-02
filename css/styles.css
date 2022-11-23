@@ -1,4 +1,228 @@
+:root {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --global-white-color:#ffffff;
+}
+
+/* Regular 400
+Medium 500
+Bold 700
+Black 900*/
+
 body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(73, 226, 43);
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--title-text-color);
+    font-family: Raleway, cursive;
+    letter-spacing: -0.015em;
+    font-size: 26px;
+    line-height: 1,19
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.pagebody {
+    background-color: #F5F5F5;
+    color: var(--primary-text-color);
+}
+ 
+ul {
+    list-style: none;
+}
+
+/*SiteNav*/
+
+.site-nav .link {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.header-address .email,
+.header-address .tel
+{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+}
+
+.header-adress .email:hover,
+.header-adress .email:focus, 
+.header-adress .tel:hover,
+.header-adress .tel:focus {
+    color: var(--accent-color);
+}
+
+/*Hero*/
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: var(--global-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    color: var(--global-white-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
+/*Section*/
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+} 
+
+.features-list .features-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.16;
+}
+
+.features-list .features-text {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.71;
+}
+
+.people-list .people-title {
+    color: var(--title-text-color);
+}
+
+.people-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.position-title {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+ 
+/*Footer*/ 
+
+.footer-logo {
+    color: var(--global-white-color);
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+} 
+
+.footer-logo span {
+    color: var(--accent-color);
+}
+
+.footer-general {
+    background-color: #2F303A;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+}
+
+.footer-address .location {
+    color: var(--global-white-color);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.location:hover,
+.location:focus {
+    color: var(--accent-color);
+}
+
+.footer-address .email,
+.footer-address .tel {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.email:hover,
+.email:focus, 
+.tel:hover,
+.tel:focus {
+    color: var(--accent-color);
+}
+
+
+
+/*Portfolio*/
+
+.button-portfolio {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.button-portfolio.active {
+    color: var(--global-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
 }
