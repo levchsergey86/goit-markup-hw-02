@@ -106,7 +106,6 @@ ul {
 
 .section-title {
     color: var(--title-text-color);
-    font-weight: 500;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -115,15 +114,18 @@ ul {
 
 .features-list .features-title {
     color: var(--title-text-color);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.16;
+    letter-spacing: 0.03em;
 }
 
 .features-list .features-text {
     color: var(--primary-text-color);
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .people-list .people-title {
@@ -160,11 +162,11 @@ ul {
 
 .footer-general {
     background-color: #2F303A;
-    color: var(--primary-text-color);
-    font-weight: 700;
+    color: var(--global-white-color);
+    font-weight: 400;
     font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
+    letter-spacing: 0.03em;
+    line-height: 1.72;
     font-style: normal;
 }
 .footer-address {
@@ -173,8 +175,7 @@ ul {
 
 .footer-address .location {
     color: var(--global-white-color);
-    font-weight: 700;
-}
+ }
 
 .location:hover,
 .location:focus {
@@ -183,8 +184,9 @@ ul {
 
 .footer-address .email,
 .footer-address .tel {
-    color: var(--primary-text-color);
-    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    /* color: var(--global-white-color); */
+    /* opacity: 0.5; */
 }
 
 .email:hover,
@@ -197,6 +199,7 @@ ul {
 /*Portfolio*/
 
 .button-portfolio {
+    font-family: Roboto, sans-serif;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
@@ -205,6 +208,7 @@ ul {
 }
 
 .button-portfolio.active {
+    font-family: Roboto, sans-serif;
     color: var(--global-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -216,14 +220,12 @@ ul {
 
 .portfolio-title {
     color: var(--title-text-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .portfolio-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
