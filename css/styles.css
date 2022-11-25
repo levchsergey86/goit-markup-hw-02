@@ -3,6 +3,7 @@
     --title-text-color:#212121;
     --accent-color:#2196F3;
     --global-white-color:#ffffff;
+    --address-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Regular 400
@@ -32,7 +33,7 @@ a {
 }
 
 .pagebody {
-    background-color: #F5F5F5;
+    background-color: var(--global-white-color);
     color: var(--primary-text-color);
 }
  
@@ -102,6 +103,11 @@ ul {
     letter-spacing: 0.06em;
 }
 
+.button:hover,
+.button:focus {
+    background-color: #188CE8;
+}
+
 /*Section*/
 
 .section-title {
@@ -112,20 +118,39 @@ ul {
     text-align: center;
 } 
 
+.visually-hidden { 
+    position: absolute; 
+    white-space: nowrap; 
+    width: 1px; height: 1px; 
+    overflow: hidden; 
+    border: 0; 
+    padding: 0; 
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%); 
+    margin: -1px; 
+}
+
 .features-list .features-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.16;
+    line-height: 1.14;
     letter-spacing: 0.03em;
 }
 
 .features-list .features-text {
     color: var(--primary-text-color);
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.section.team {
+    background-color:#F5F4FA;
+}
+
+.people-list .people-item {
+    background-color: var(--global-white-color);
 }
 
 .people-list .people-title {
@@ -140,8 +165,8 @@ ul {
 }
 
 .position-title {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
  
@@ -163,18 +188,20 @@ ul {
 .footer-general {
     background-color: #2F303A;
     color: var(--global-white-color);
-    font-weight: 400;
     font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.72;
     font-style: normal;
 }
+
 .footer-address {
     font-style: normal;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 .footer-address .location {
     color: var(--global-white-color);
+    letter-spacing: 0.03em;
+    line-height: 1.71;
  }
 
 .location:hover,
@@ -184,9 +211,9 @@ ul {
 
 .footer-address .email,
 .footer-address .tel {
-    color: rgba(255, 255, 255, 0.5);
-    /* color: var(--global-white-color); */
-    /* opacity: 0.5; */
+    color: var(--address-color);
+    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 .email:hover,
@@ -203,7 +230,7 @@ ul {
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
     letter-spacing: 0.03em;
 }
 
@@ -214,8 +241,13 @@ ul {
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
     letter-spacing: 0.03em;
+}
+
+.button-portfolio.active:focus,
+.button-portfolio.active:hover {
+    background-color: #188CE8;;
 }
 
 .portfolio-title {
@@ -227,6 +259,6 @@ ul {
 
 .portfolio-text {
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.88;
     letter-spacing: 0.03em;
 }
