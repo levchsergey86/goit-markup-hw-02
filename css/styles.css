@@ -245,9 +245,10 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.button-portfolio.active:focus,
-.button-portfolio.active:hover {
-    background-color: #188CE8;;
+.button-portfolio:focus,
+.button-portfolio:hover {
+    background-color: var(--accent-color);
+    color: var(--global-white-color);
 }
 
 .portfolio-title {
